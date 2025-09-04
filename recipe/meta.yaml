@@ -1,5 +1,5 @@
 {% set name = "pypolymlp" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypolymlp-{{ version }}.tar.gz
-  sha256: 0172d691e54c53926d318ea93c9ed54779dadb69763a26041452299518fc7d23
+  sha256: 0e94fa4c116819989512975ca8693c9e63ad4b4263a487a6a7b7163d63402811
 
 build:
   skip: true  # [py<39 or win]
@@ -20,7 +20,7 @@ build:
     - pypolymlp-sscha-structure=pypolymlp.api.run_polymlp_sscha_str:run
     - pypolymlp-sscha-post=pypolymlp.api.run_polymlp_sscha_post:run
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
