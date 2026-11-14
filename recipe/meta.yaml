@@ -20,7 +20,7 @@ build:
     - pypolymlp-sscha-structure=pypolymlp.api.run_polymlp_sscha_str:run
     - pypolymlp-sscha-post=pypolymlp.api.run_polymlp_sscha_post:run
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
